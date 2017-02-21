@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 gem 'gon-sinatra'
-gem 'shotgun'
 
 group :test do
   gem 'capybara'

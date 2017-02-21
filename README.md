@@ -1,4 +1,4 @@
-# Sonar - Home flow tech test submission
+# Sonar - Homeflow tech test submission
 
 ## Brief
 

@@ -6,8 +6,6 @@ class Listing
 
   attr_reader :num_bedrooms, :price, :property_type, :description, :remaining_description, :details_url, :image_url, :thumbnail_url
 
-  API_URL = "http://api.zoopla.co.uk/api/v1/property_listings.js?api_key=#{ENV['ZOOPLA_API_KEY']}&"
-
   def initialize
     @id = nil
     @details = nil
