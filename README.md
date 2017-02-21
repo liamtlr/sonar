@@ -36,8 +36,8 @@ rspec
  - [x] Extend shortened description
  - [x] Return to search results (data persisted)
  - [x] Rudimentary styling
- - [x] Competent styling
- - [x] Deploy to Heroku
+ - [] Competent styling
+ - [] Deploy to Heroku
 
 
 
