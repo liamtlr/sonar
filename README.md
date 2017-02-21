@@ -1,4 +1,4 @@
-# Sonar - Homeflow tech test submission
+# Sonar: Homeflow tech test submission
 
 ## Brief
 
@@ -8,7 +8,7 @@ Create a one page app to to search and display property data from an external AP
 
 1. Clone the repo
 2. Navigate to the folder created
-3. Sign up for a Zoopla API key here (http://http://developer.zoopla.com/)
+3. Sign up for a Zoopla API key here (http://developer.zoopla.com/)
 4. Export the key using the following (replacing the square brackets with your API key):
 
 ```
@@ -22,11 +22,25 @@ ruby lib/app.rb
 
 ## Testing
 
-Tested using RSPec and Capybara. To run tests, execute the following from the root of the project:
+Tested using RSpec and Capybara. To run tests, execute the following from the root of the project:
 
 ```
 rspec
 ```
+
+## Progress
+
+ - [x] Search form
+ - [x] Results displayed
+ - [x] Detailed view of listing
+ - [x] Extend shortened description
+ - [x] Return to search results (data persisted)
+ - [x] Rudimentary styling
+ - [x] Competent styling
+ - [x] Deploy to Heroku
+
+
+
 
 ## Notes on the build
 
