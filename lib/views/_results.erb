@@ -1,0 +1,26 @@
+  <div class="pure-g">
+    <div class="pure-u-2-24"></div>
+    <div class="pure-u-20-24">
+      <% if @listings %>
+        <% if @search.error %>
+          <h2> No listings match your search criteria </h2>
+          <% else%>
+          <h3> Displaying results for <%= @search.return_location %> </h3>
+          <% @listings.each_with_index do |listing, index| %>
+          <div>
+            <div class="result">
+              <img class="thumb" src="<%= listing.thumbnail_url %>"</img>
+              <h3> Asking price: £<%= listing.price %></h3>
+              <h3> Bedrooms: <%= listing.num_bedrooms %></h3>
+              <form action="/view" method="post">
+                <input type= 'hidden' name="index" value="<%= index %>" >
+                <input type="submit" id="<%= index %>" class="pure-button" value="See more">
+              </form>
+            </div>
+          </div>
+          <% end %>
+        <% end %>
+      <% end %>
+
+    <div class="pure-u-2-24"></div>
+  </div>

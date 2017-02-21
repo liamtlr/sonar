@@ -1,0 +1,27 @@
+<% if @listing %>
+  <div class="pure-g">
+    <div class="pure-u-2-24"></div>
+    <div class="pure-u-20-24">
+
+      <form action="/" method="post">
+        <input type="submit" class="pure-button" id="back" value="Back to results">
+      </form>
+      <img class="listing-photo" src="<%= @listing["image_url"] %>"</img>
+
+        <h3><%= @listing['num_bedrooms'] %> bedrooms </h3>
+        <h3><%= @listing['property_type'] %> property</h3>
+        <h3>£<%= @listing['price'] %></h3>
+
+        <a href="<%= @listing['details_url'] %>" class="pure-button">Go to vendor site</a>
+        <% if @listing['remaining_description'] %>
+          <h4 id="description"><%= @listing['description'] %> <a id="ellipsis">...</a> </h4>
+          <h4 id="remaining-description"><%= @listing['remaining_description'] %></h4>
+          <a href="#" id="show-less" class="pure-button">View less</a>
+          <a href="#" id="show-more" class="pure-button">View more</a>
+      <% else %>
+          <h4><%= @listing['description'] %></h4>
+      <% end %>
+    </div>
+    <div class="pure-u-2-24"></div>
+  </div>
+<% end %>
