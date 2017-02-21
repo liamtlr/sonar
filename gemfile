@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 gem 'gon-sinatra'
+gem 'heroku'
 
 group :test do
   gem 'capybara'
